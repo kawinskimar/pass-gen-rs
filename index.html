@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/custom.css">
+    <link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/cosmo/bootstrap.min.css">
+    <title>PassGen:RS</title>
+</head>
+
+<body>
+    <div class="jumbotron vertical-center">
+        <div class="container text-center">
+            <h1 class="noselect">PassGen:RS</h1>
+            <p class="text-muted noselect pad">This app was inspired by xkcd #936 - "Password Strength"</p>
+            <div class="row justify-content-md-center form-group form-inline">
+                <div class="col-md-auto">
+                    <form>
+                        <select id="length" class="custom-select noselect">
+                            <option disabled selected>Word length</option>
+                            <option>long</option>
+                            <option>short</option>
+                        </select>
+                    </form>
+                    <p class="text-muted noselect">default: short</p>
+                </div>
+                <div class="col-md-auto">
+                    <form>
+                        <select id="delimiter" class="custom-select noselect">
+                            <option disabled selected>Delimiter</option>
+                            <option>-</option>
+                            <option>_</option>
+                            <option>*</option>
+                            <option>+</option>
+                            <option>@</option>
+                            <option>$</option>
+                        </select>
+                    </form>
+                    <p class="text-muted noselect">default: -</p>
+                </div>
+                <div class="col-md-auto">
+                    <form>
+                        <select id="numWords" class="custom-select noselect">
+                            <option disabled selected>Number of words</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                        </select>
+                    </form>
+                    <p class="text-muted noselect">default: 3</p>
+                </div>
+                <div class="col-md-auto">
+                    <div class="form-check">
+                        <input class="form-check-input noselect" type="checkbox" id="check1">
+                        <label class="form-check-label noselect" for="check1">
+                            Prepend number (1-100)
+                        </label>
+                    </div>
+                    <p class="noselect">&nbsp;</p>
+                </div>
+            </div>
+            <div class="row justify-content-md-center form-group form-inline">
+                <div class="col-md">
+                    <button type="button" class="btn btn-primary" id="genBtn">Generate new password</button>
+                </div>
+            </div>
+            <div class="row justify-content-md-center">
+                <h3 id="password" class="text-primary">&nbsp;</h3>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>require('./src/renderer.js')</script>
+
+</html>

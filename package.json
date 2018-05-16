@@ -1,0 +1,20 @@
+{
+  "name": "password-generator",
+  "version": "1.0.0",
+  "description": "Password generator based on XKCD",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Marissa J. Kawinski",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^2.0.0",
+    "electron-context-menu": "^0.9.1",
+    "npm": "^6.0.1",
+    "title-case": "^2.1.1"
+  },
+  "devDependencies": {
+    "electron": "^2.0.0"
+  }
+}
